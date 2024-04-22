@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Druzyna {
+
     private String nazwa;
     private int punkty = 0;
-
-    ArrayList<Mecz> mecze = new ArrayList<>();
+    ArrayList<Mecz> mecze = new ArrayList<Mecz>();
 
     public Druzyna(String nazwa) {
         this.nazwa = nazwa;
@@ -21,10 +21,10 @@ public class Druzyna {
 
     public void dodajMecz(Mecz mecz) {
         mecze.add(mecz);
-        if(mecz.getZwyciezca() == null) {
-            punkty += 3;
+        if(mecz.getZwyciezca() == null){
+            punkty += 1;
         }
-        else if(mecz.getZwyciezca().equals(this)) {
+        else if(mecz.getZwyciezca().equals(this)){
             punkty += 3;
         }
     }

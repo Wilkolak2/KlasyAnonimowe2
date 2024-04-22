@@ -1,4 +1,5 @@
 public class Mecz {
+
     private Druzyna druzynaA;
     private Druzyna druzynaB;
     private Druzyna zwyciezca;
@@ -9,7 +10,7 @@ public class Mecz {
         this.druzynaB = druzynaB;
     }
 
-    public void setWynik(String wynik, Druzyna zwyciezca) {
+    public void setWynik(String wynik, Druzyna zwyciezca){
         this.wynik = wynik;
         this.zwyciezca = zwyciezca;
     }
